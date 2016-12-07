@@ -1,0 +1,993 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Send Standard Post - Regroup</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Include Twitter Bootstrap and jQuery: -->
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+ 
+<!-- Include the plugin's CSS and JS: -->
+<script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+<link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css"/>
+</head>
+<body>
+
+  <!-- Page -->
+  <div class="page">
+
+    <!-- Header -->
+    <header class="header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="logo navbar-brand" href="#">
+              <img src="assets/img/logo.png" class="img-responsive" alt="Regroup">
+            </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="page1-a.html">Dashboard</a></li>
+              <li class="active"><a href="#">Post</a>
+              <ul class="dropdown-menu">
+                  <li ><a href="2-language-select.html">Send Standard Post</a></li>
+                  <li><a href="#">Send Voice Recording</a></li>
+                  <li class="disabled">
+                    <a>
+                      Send Poll
+                      <i class="fa fa-question-circle"></i>
+                    </a>
+                  </li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="3fa-language-select.html">Manage Posts</a></li>
+                </ul>
+              </li>
+              <li><a href="#">IPAWS</a></li>
+              <li><a href="#">Recipients</a></li>
+              <li><a href="page5-a.html">Reports</a></li>
+              <li><a href="13a-language-settings">Settings</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="header__notification"><a href="#"><i class="fa fa-bell-o"></i><span class="badge"></span></a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jen Masters<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="12aa-language-selection.html">My Profile</a></li>
+                  <li><a href="#">Switch Accounts</a></li>
+                  <li><a href="#">Super Login</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-right">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </header>
+    <!-- /Header -->
+
+    <!-- Content -->
+    <div class="content">
+      <div class="container">
+
+        <!-- Breadcrumbs -->
+        <ol class="breadcrumb">
+          <li><a href="#">Dashboard</a></li>
+          <li class="active">Send Standard Post</li>
+        </ol>
+        <!-- /Breadcrumbs -->
+
+        <!-- Send Standard Post -->
+        <form class="form-horizontal">
+          <div class="send-standard-post panel panel-default">
+            <div class="send-standard-post__header panel-heading panel-heading_big">
+              <h3 class="panel-title">New Post</h3>
+            </div>
+            <ul class="send-standard-post__list list-group">
+              <li class="send-standard-post__list-item list-group-item">
+                <h4 class="send-standard-post__list-item-title h5">Quick Post Template</h4>
+                <div class="form-group mt20">
+                  <label class="col-sm-2 control-label">Select a Template</label>
+                  <div class="col-sm-7">
+                    <select class="form-control">
+                      <option value="">No Quick Post Template Selected</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 1</option>
+                      <option value="3">Option 1</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="post-recipient-information__select-all">
+                      <a href="">Manage</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="send-standard-post__list-item list-group-item">
+                <h4 class="send-standard-post__list-item-title h5">Post Method</h4>
+                <div class="send-standard-post__list-item-content">
+
+                  <!-- Post method -->
+                  <div class="post-method">
+                    <div class="post-method__buttons">
+                      <a class="post-method__button btn btn-default" href="#" role="button">
+                        <span class="post-method__button-icon">
+                          <i class="fa fa-rss"></i>
+                        </span>
+                        <span class="post-method__button-title">RSS</span>
+                      </a>
+                      <a class="post-method__button btn btn-default" href="#" role="button">
+                        <span class="post-method__button-icon">
+                          <i class="fa fa-envelope"></i>
+                        </span>
+                        <span class="post-method__button-title">Email</span>
+                      </a>
+                      <a class="post-method__button btn btn-default" href="#" role="button">
+                        <span class="post-method__button-icon">
+                          <i class="fa fa-commenting"></i>
+                        </span>
+                        <span class="post-method__button-title">Text/SMS</span>
+                      </a>
+                      <a class="post-method__button btn btn-default" href="#" role="button">
+                        <span class="post-method__button-icon">
+                          <i class="fa fa-desktop"></i>
+                        </span>
+                        <span class="post-method__button-title">TTS</span>
+                      </a>
+                      <a class="post-method__button btn btn-default" href="#" role="button">
+                        <span class="post-method__button-icon">
+                          <i class="fa fa-microphone"></i>
+                        </span>
+                        <span class="post-method__button-title">Voice Record</span>
+                      </a>
+                      <a class="post-method__button btn btn-default" href="#" role="button">
+                        <span class="post-method__button-icon">
+                          <i class="fa fa-assistive-listening-systems"></i>
+                        </span>
+                        <span class="post-method__button-title">Alert Manager</span>
+                      </a>
+                      <!-- <a class="post-method__button btn btn-default" href="#" role="button">
+                        <span class="post-method__button-icon">
+                          <i class="fa fa-facebook"></i>
+                        </span>
+                        <span class="post-method__button-title">Facebook</span>
+                      </a>
+                      <a class="post-method__button btn btn-default" href="#" role="button">
+                        <span class="post-method__button-icon">
+                          <i class="fa fa-twiter"></i>
+                        </span>
+                        <span class="post-method__button-title">Twitter</span>
+                      </a>
+                      <a class="post-method__button btn btn-default" href="#" role="button">
+                        <span class="post-method__button-icon">
+                          <i class="fa fa-cogs"></i>
+                        </span>
+                        <span class="post-method__button-title">Digital Singage</span>
+                      </a>
+                      <a class="post-method__button btn btn-default" href="#" role="button">
+                        <span class="post-method__button-icon">
+                          <i class="fa fa-cogs"></i>
+                        </span>
+                        <span class="post-method__button-title">Alert Us</span>
+                      </a>
+                      <a class="post-method__button btn btn-default" href="#" role="button">
+                        <span class="post-method__button-icon">
+                          <i class="fa fa-cogs"></i>
+                        </span>
+                        <span class="post-method__button-title">Informa Cast</span>
+                      </a>
+                      <a class="post-method__button btn btn-default" href="#" role="button">
+                        <span class="post-method__button-icon">
+                          <i class="fa fa-cogs"></i>
+                        </span>
+                        <span class="post-method__button-title">BRG Alert</span>
+                      </a>
+                      <a class="post-method__button btn btn-default" href="#" role="button">
+                        <span class="post-method__button-icon">
+                          <i class="fa fa-cogs"></i>
+                        </span>
+                        <span class="post-method__button-title">PA Alert</span>
+                      </a> -->
+                      <!-- <a href="" class="post-method__button post-method__button_link">Hide</a> -->
+                      <a href="" class="post-method__button post-method__button_link">
+                        Show Additional Post Methods
+                      </a>
+                      <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="top" title="Some text"></i>
+                    </div>
+                  </div>
+                  <!-- /Post method -->
+
+                </div>
+              </li>
+              <li class="send-standard-post__list-item list-group-item">
+                <h4 class="send-standard-post__list-item-title h5">
+                  Recipient Information&nbsp;&nbsp;
+                  <small>(Select at least one recipient from the options below)</small>
+                </h4>
+                <div class="send-standard-post__list-item-content">
+
+                  <!-- Recipient information -->
+                  <div class="post-recipient-information">
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">Network</label>
+                      <div class="col-sm-7">
+                        <select class="form-control">
+                          <option value=""></option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 1</option>
+                          <option value="3">Option 1</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">Group(s)</label>
+                      <div class="col-sm-7">
+                        <select class="form-control">
+                          <option value=""></option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 1</option>
+                          <option value="3">Option 1</option>
+                        </select>
+                        <small>Search by Group Name or press spacebar for full list.</small>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="post-recipient-information__select-all">
+                          <a href="">Select All</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">Map Mode</label>
+                      <div class="col-sm-7">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox">
+                            Locate recipients in a geographical area
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-10">
+                          <a href="">Show Additional Recipient Options</a>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- /Recipient information -->
+
+                </div>
+              </li>
+              <li class="send-standard-post__list-item list-group-item">
+                <h4 class="send-standard-post__list-item-title h5">Sender Information</h4>
+                <div class="send-standard-post__list-item-content">
+                  <div class="post-sender-information">
+
+                    <!-- Sender information -->
+                    <div class="post-sender-information">
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label">Email Reply-to *</label>
+                        <div class="col-sm-9">
+                          <div class="send-standard-post__item">
+                            <label class="control-label">email@regroup.com</label>
+                          </div>
+                          <div class="send-standard-post__item">
+                            <a href="#modalEditReplyTo" data-toggle="modal">Edit</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label">Caller ID*</label>
+                        <div class="col-sm-9">
+                          <div class="send-standard-post__item">
+                            <label class="control-label">123123123123</label>
+                          </div>
+                          <div class="send-standard-post__item">
+                            <a href="#modalEditCaller" data-toggle="modal">Edit</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label">Caller Name*</label>
+                        <div class="col-sm-9">
+                          <div class="send-standard-post__item">
+                            <label class="control-label">Regroup Notifications</label>
+                          </div>
+                          <div class="send-standard-post__item">
+                            <a href="#modalEditCaller" data-toggle="modal">Edit</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /Sender information -->
+
+                  </div>
+                </div>
+              </li>
+              <li class="send-standard-post__list-item list-group-item">
+                <h4 class="send-standard-post__list-item-title h5">Compose Message</h4>
+                <div class="send-standard-post__list-item-content">
+
+                  <!-- Compose message -->
+                  <div class="post-compose-message">
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">Use Msg. Template</label>
+                      <div class="col-sm-7">
+                        <select class="form-control">
+                          <option value="">No Message Template</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 1</option>
+                          <option value="3">Option 1</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="post-compose-message__manage">
+                          <a href="">Manage</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">Subject&nbsp;*</label>
+                      <div class="col-sm-7">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">Attachments</label>
+                      <div class="col-sm-10">
+                        <input type="file" />
+                        <p class="help-block">Max of 10MB</p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">Message *</label>
+                      <div class="col-sm-8">
+                        <textarea class="form-control"></textarea>
+                        <div>
+                        <select class="form-control">
+                          <option value="">Detect language</option> <!-- /need to check the google language api -->
+                          <option value="1">lang 1</option> <!-- /user selected languages -->
+                          <option value="2">lang 2</option> 
+                          <option value="3">lang 3</option>
+                        </select>
+                        </div>
+                      </div>
+                    </div>
+                        <div class="form-group">
+                      <label class="col-sm-2 control-label">Message Language</label>
+                      <div class="col-sm-7">
+                        <select class="form-control">
+                          <option value="">Default</option> <!-- /User Preference -->
+                          <option value="1">Post Setting Language</option> <!-- /Post Settings -->
+                          <option value="2">English</option> <!-- /Selected languages pulled from network settings (specified list, not to pull a million languages-->
+                          <option value="3">Spanish</option>
+                        </select>
+                        <div class="row">
+                      	<div class="col-sm-9">
+                        <div class="post-compose-message__manage">
+                          <a href="12aa-language-selection.html">Message will be sent in the language selected by user </a><i class="fa fa-question-circle" data-toggle="tooltip" data-placement="top" title="The message will be automatically translated and sent in a user selected language"></i>
+                        </div>
+                      </div>
+                      </div>
+                        <div class="checkbox">
+                          <p>
+                            <label>
+                              <input type="checkbox"> Save as a Message Template
+                            </label>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <a href="#modalPreviewEmail" class="btn btn-default" data-toggle="modal">Preview</a>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">Text/SMS Msg *</label>
+                      <div class="col-sm-5">
+                        <textarea class="form-control"></textarea>
+                        <div class="row">
+                          <div class="col-xs-6">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"> Same as Email
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-xs-6">
+                            <p class="help-block text-right">0 characters</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <a href="#modalPreviewText" class="btn btn-default" data-toggle="modal">Preview</a>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">TTS Language</label>
+                        <div class="col-sm-10">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"> Translate Text-to-Speech message.
+                              </label>
+                            </div>
+                            <small>Please consider avoiding automatic translation for Emergency Messages</small>
+                          </div>
+                      <label class="col-sm-2 control-label">TTS Audio</label>
+                      <div class="col-sm-10">
+                        <p class="help-block">
+                          <a href=""><i class="fa fa-volume-up"></i></a>
+                          To hear preview, ensure your speaker volumn is turned on/up.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Compose message -->
+
+                </div>
+              </li>
+              <li class="send-standard-post__list-item list-group-item">
+                <h4 class="send-standard-post__list-item-title h5">RSS Duration</h4>
+                <div class="send-standard-post__list-item-content">
+
+                  <!-- RSS Duration -->
+                  <div class="post-rss-duration">
+                    <div class="post-rss-duration__row row">
+                      <div class="col-sm-3 col-md-2">
+                        <div class="radio radio_without-padding">
+                          <label>
+                            <input type="radio" name="radioRssDuration">
+                            Always Listed
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-sm-9 col-md-10">
+                        Admin can remove any RSS feed / embed posts from the post detail page.
+                      </div>
+                    </div>
+                    <div class="post-rss-duration__row row">
+                      <div class="col-sm-3 col-md-2">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="radioRssDuration">
+                            Remove
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-sm-9 col-md-10">
+                        <div class="post-rss-duration__form-group">
+                          <label>Hours</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="post-rss-duration__form-group">
+                          <label>Minutes</label>
+                          <select class="form-control">
+                            <option value="00">00</option>
+                            <option value="01">01</option>
+                          </select>
+                        </div>
+                        <a href="" class="post-rss-duration__link">Use Date &amp; Time</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /RSS Duration -->
+
+                </div>
+              </li>
+              <li class="send-standard-post__list-item list-group-item">
+                <h4 class="send-standard-post__list-item-title h5">Voice Recording</h4>
+                <div class="send-standard-post__list-item-content">
+
+                  <!-- Voice recording -->
+                  <div class="post-voice-recording">
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">Add New File</label>
+                      <div class="col-sm-10">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="radioVoiceRecording">
+                            Record Message Over Phone
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="radioVoiceRecording">
+                            Upload .wav file
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">Selected File&nbsp;*</label>
+                      <div class="col-sm-10">
+                        <div class="table-responsive">
+                          <table class="table table-bordered table-hover">
+                            <thead>
+                              <tr>
+                                <th class="text-center">Select</th>
+                                <th>Title</th>
+                                <th>File Size</th>
+                                <th>Saved</th>
+                                <th>Language</th>
+                                <th>Actions</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="text-center">
+                                  <input type="radio" name="radioSelectedFile">
+                                </td>
+                                <td>
+                                  Emergeny Evacuation
+                                </td>
+                                <td>
+                                  2MB
+                                </td>
+                                <td>
+                                  English
+                                </td>
+                                <td>
+                                  04/25/16
+                                </td>
+                                <td>
+                                  <a href=""><i class="fa fa-volume-up"></i></a>
+                                  <a href="#modalLanguageSelect" data-toggle="modal"><i class="fa fa-language"></i></a>
+                                  <a href=""><i class="fa fa-download"></i></a>
+                                  <a href=""><i class="fa fa-close"></i></a>
+                                  
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="text-center">
+                                  <input type="radio" name="radioSelectedFile">
+                                </td>
+                                <td>
+                                  Emergeny Evacuation
+                                </td>
+                                <td>
+                                  2MB
+                                </td>
+                                <td>
+                                  Spanish
+                                </td>
+                                <td>
+                                  04/25/16
+                                </td>
+                                <td>
+                                  <a href=""><i class="fa fa-volume-up"></i></a>
+                                  <a href="#modalLanguageSelect" data-toggle="modal"><i class="fa fa-language"></i></a>
+                                  <a href=""><i class="fa fa-download"></i></a>
+                                  <a href=""><i class="fa fa-close"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="text-center">
+                                  <input type="radio" name="radioSelectedFile">
+                                </td>
+                                <td>
+                                  Emergeny Evacuation
+                                </td>
+                                <td>
+                                  2MB
+                                </td>
+                                <td>
+                                  French
+                                </td>
+                                <td>
+                                  04/25/16
+                                </td>
+                                <td>
+                                  <a href=""><i class="fa fa-volume-up"></i></a>
+                                  <a href="#modalLanguageSelect" data-toggle="modal"><i class="fa fa-language"></i></a>
+                                  <a href=""><i class="fa fa-download"></i></a>
+                                  <a href=""><i class="fa fa-close"></i></a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Voice recording -->
+
+                </div>
+              </li>
+            </ul>
+
+            <div class="send-standard-post__footer panel-footer">
+              <div class="row">
+                <div class="col-sm-4 col-md-3 col-lg-3">
+                  <div class="send-standard-post__footer-required">
+                    * - Required fields
+                  </div>
+                </div>
+                <div class="col-sm-8 col-md-4 col-lg-5">
+                  <div class="send-standard-post__footer-checkboxes">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" id="chbSaveQuickTemplate">
+                        Save as Quick Post Template
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" id="chbScheduleForLater">
+                        Schedule for Later
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-5 col-lg-4">
+                  <div class="send-standard-post__footer-buttons">
+                    <a class="btn btn-default" href="#" role="button">Preview</a>
+                    <a class="btn btn-default" href="#modalSendTestToMyself" data-toggle="modal">Send Test to Myself</a>
+                    <a class="btn btn-primary" href="#modalSendPost" data-toggle="modal">Post Message</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </form>
+        <!-- /Send Standard Post -->
+
+      </div>
+    </div>
+    <!-- /Content -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer-links">
+          <li class="footer-links__item">
+            &copy; Regroup 2016
+          </li>
+          <li class="footer-links__item">
+            <a href="">Regroup.com</a>
+          </li>
+          <li class="footer-links__item">
+            <a href="">Privacy</a>
+          </li>
+          <li class="footer-links__item">
+            <a href="">Legal</a>
+          </li>
+          <li class="footer-links__item">
+            <a href="">Help</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+  </div>
+  <!-- /Page -->
+
+  <!-- Preview text modal -->
+  <div id="modalPreviewText" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Preview</h4>
+        </div>
+        <div class="modal-body">
+          <img src="assets/img/content/post/preview-text.png" alt="" class="img-responsive-center">
+        </div>
+        <div class="modal-footer">
+        <label class="alert-link"><a href="2.html"> Edit Language </a></label>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Preview text modal -->
+
+  <!-- Preview email modal -->
+  <div id="modalPreviewEmail" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Preview</h4>
+        </div>
+        <div class="modal-body">
+          <img src="assets/img/content/post/preview-email.png" alt="" class="img-responsive-center">
+        </div>
+        <div class="modal-footer">
+        	<label class="alert-link"><a href="2.html"> Edit Language </a></label>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Preview email modal -->
+
+  <!-- Schedule post for later modal -->
+  <div id="modalSchedulePostForLater" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Schedule Post for Later</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label>Date &amp; Time*</label>
+              <div class="input-group">
+                <input type="text" class="form-control datepicker">
+                <div class="input-group-addon">
+                  <i class="fa fa-calendar"></i>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Frequency*</label>
+              <select class="form-control">
+                <option value="">None</option>
+                <option value="Daily">Daily</option>
+                <option value="Weekly">Weekly</option>
+                <option value="Monthly">Monthly</option>
+                <option value="Yearly">Yearly</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Schedule post for later modal -->
+  
+  <!-- Language Select modal -->
+  <div id="modalLanguageSelect" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Language Select</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-inline">
+            <div class="form-group">
+              <div>
+                <label>Select One</label>
+              </div>
+              <div>
+              <select class="form-control">
+                          <option value="">Spanish</option> <!-- /User Preference -->
+                          <option value="1">French</option> <!-- /Post Settings -->
+                          <option value="2">English</option> <!-- /Selected languages pulled from network settings (specified list, not to pull a million languages-->
+                          <option value="3">Portuguese (BR)</option>
+                        </select>
+                        <p><small>To enable more languages please add them in <a href ="13a-language-selection.html"> network settings</a></small></p>
+             </div>
+             </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Language Select modal -->
+
+  <!-- Save as quick post template modal -->
+  <div id="modalSaveQuickTemplate" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Schedule Post for Later</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label>Quick Post template Title*</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Visibility*</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="radioVisibility">
+                  Me only
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="radioVisibility">
+                  All members - Public
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="radioVisibility">
+                  All Admin
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Save as quick post template modal -->
+
+  <!-- Edit reply to modal -->
+  <div id="modalEditReplyTo" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Edit Reply-To Email Address</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-inline">
+            <div class="form-group">
+              <div>
+                <label>Select One</label>
+              </div>
+              <div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="radioEditReply">
+                    anemail@regroup.com
+                  </label>
+                </div>
+              </div>
+              <div class="mt10">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="radioEditReply">
+                    otheremail@regroup.com
+                  </label>
+                </div>
+              </div>
+              <div class="mt5">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="radioEditReply">
+                    Name
+                    <input type="text" class="form-control">
+                    Email
+                    <input type="text" class="form-control">
+                  </label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Edit reply to modal -->
+
+  <!-- Edit caller modal -->
+  <div id="modalEditCaller" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Edit Caller ID</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <label>New Caller ID</label>
+            <input type="text" class="form-control">
+            <p class="help-block">
+              Include country code. Exclude symbols or spaces. Ex: 123123123
+            </p>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Edit caller modal -->
+
+  <!-- Send test to myself modal -->
+  <div id="modalSendTestToMyself" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Send Test To Myself</h4>
+        </div>
+        <div class="modal-body">
+          Test messages have been sent to you.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Send test to myself modal -->
+
+  <!-- Send post modal -->
+  <div id="modalSendPost" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Send Post</h4>
+        </div>
+        <div class="modal-body">
+          Please confirm that you want to send this post.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Send Post</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Send post modal -->
+
+  <script src="assets/js/script.js"></script>
+  <script>
+    $(function() {
+
+      // Schedule for Later
+      $('#chbScheduleForLater').on('change', function() {
+        if($(this).is(':checked')) {
+          $('#modalSchedulePostForLater').modal('show');
+        }
+      });
+
+      // Save as Quick Post Template
+      $('#chbSaveQuickTemplate').on('change', function() {
+        if($(this).is(':checked')) {
+          $('#modalSaveQuickTemplate').modal('show');
+        }
+      });
+
+    });
+  </script>
+</body>
+</html>
